@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}Programs | NAVCA{% endblock %}
+{% block content %}
+
+<h1 class="h3">Programs</h1>
+<p class="text-muted">
+  NAVCA implements sector programs and capacity development while working with NGOs, CBOs, faith-based organizations,
+  government actors, and international partners.
+</p>
+
+<div class="accordion" id="programsAcc">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#p1">
+        Environment Sustainability & Peace Advocacy
+      </button>
+    </h2>
+    <div id="p1" class="accordion-collapse collapse show" data-bs-parent="#programsAcc">
+      <div class="accordion-body">
+        <ul class="mb-0">
+          <li>Climate and environmental justice, pollution awareness</li>
+          <li>Community organizing, advocacy, and public policy engagement</li>
+          <li>Capacity strengthening with communities most affected by environmental degradation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p2">
+        Sexual & Reproductive Health (SRH)
+      </button>
+    </h2>
+    <div id="p2" class="accordion-collapse collapse" data-bs-parent="#programsAcc">
+      <div class="accordion-body">
+        <ul class="mb-0">
+          <li>SRH information and services for youth aged 10–24</li>
+          <li>Inclusion of youth in school, out of school, and youth with disabilities</li>
+          <li>Strengthen coordination, surveillance, evidence and best-practice documentation</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p3">
+        Film, Creative Arts, Theatre & Publicity
+      </button>
+    </h2>
+    <div id="p3" class="accordion-collapse collapse" data-bs-parent="#programsAcc">
+      <div class="accordion-body">
+        <ul class="mb-0">
+          <li>Theatre for awareness, conflict resolution, and civic participation</li>
+          <li>Youth development through arts, design, performance, and talent initiatives</li>
+          <li>Cultural preservation and addressing harmful traditional practices</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p4">
+        Livelihood Support, Entrepreneurship & Economic Empowerment
+      </button>
+    </h2>
+    <div id="p4" class="accordion-collapse collapse" data-bs-parent="#programsAcc">
+      <div class="accordion-body">
+        <ul class="mb-0">
+          <li>Economic empowerment and resilience through skills and enterprise</li>
+          <li>Strengthening community participation and representation</li>
+          <li>Capacity building for sustainable outcomes among vulnerable groups</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p5">
+        Information Technology (IT)
+      </button>
+    </h2>
+    <div id="p5" class="accordion-collapse collapse" data-bs-parent="#programsAcc">
+      <div class="accordion-body">
+        <ul class="mb-0">
+          <li>Equip communities with ICT knowledge</li>
+          <li>Promote IT skills for business and daily life</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#p6">
+        Agriculture (Resilient Agricultural Livelihoods)
+      </button>
+    </h2>
+    <div id="p6" class="accordion-collapse collapse" data-bs-parent="#programsAcc">
+      <div class="accordion-body">
+        <ul class="mb-0">
+          <li>Community-based participatory planning</li>
+          <li>Women and marginalized groups: empowerment and food security</li>
+          <li>Climate-resilient and sustainable agriculture approaches</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

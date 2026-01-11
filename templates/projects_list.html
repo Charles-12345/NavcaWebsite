@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Projects | NAVCA{% endblock %}
+
+{% block content %}
+<h1 class="h3">Projects</h1>
+<p class="text-muted">Browse NAVCA programs and project interventions.</p>
+
+<div class="row g-3 mt-2">
+  {% for p in projects %}
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-body">
+          <h2 class="h6">{{ p.title }}</h2>
+          <p class="text-muted small">{{ p.summary }}</p>
+
+          {% if p.location %}
+            <p class="small mb-2"><strong>Location:</strong> {{ p.location }}</p>
+          {% endif %}
+
+          <a class="btn btn-outline-dark btn-sm" href="/projects/{{ p.slug }}/">View details</a>
+        </div>
+      </div>
+    </div>
+  {% empty %}
+    <p class="text-muted">No projects yet. Add projects in Admin → Projects.</p>
+  {% endfor %}
+</div>
+{% endblock %}

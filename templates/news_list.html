@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}News | NAVCA{% endblock %}
+
+{% block content %}
+<h1 class="h3">News</h1>
+<p class="text-muted">Updates, stories, and announcements from NAVCA.</p>
+
+<ul class="list-group mt-3">
+  {% for n in posts %}
+    <li class="list-group-item">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <a href="/news/{{ n.slug }}/" class="fw-semibold">{{ n.title }}</a>
+          <div class="text-muted small">{{ n.excerpt }}</div>
+        </div>
+        <span class="badge text-bg-secondary">{{ n.published_on }}</span>
+      </div>
+    </li>
+  {% empty %}
+    <li class="list-group-item text-muted">No news posts yet. Add posts in Admin → NewsPost.</li>
+  {% endfor %}
+</ul>
+{% endblock %}
